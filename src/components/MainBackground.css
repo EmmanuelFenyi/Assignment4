@@ -1,0 +1,47 @@
+#main-bg {
+  width: 94%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: rgba(89, 110, 117, 0.548);
+  display: flex;
+}
+#main-bg.off {
+  opacity: 0;
+  transition: 0s ease-in-out;
+}
+
+.bgAnimation {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  animation: mary-go-round 40s ease-in-out infinite forwards;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@keyframes mary-go-round {
+  0% {
+    background-image: url(./bgImages/images-1.jpg);
+  }
+  20% {
+    background-image: url(./bgImages/image-5.jpg);
+  }
+  40% {
+    background-image: url(./bgImages/2016BuickCascada.webp);
+  }
+  60% {
+    background-image: url(./bgImages/images-1.jpg);
+  }
+  80% {
+    background-image: url(./bgImages/image-2.jpg);
+  }
+
+  100% {
+    background-image: url(./bgImages/image-5.jpg);
+  }
+}
